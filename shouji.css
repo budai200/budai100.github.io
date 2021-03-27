@@ -1,0 +1,99 @@
+
+body {
+	background: url(img/my3/bg.png)
+}
+
+.head:hover > span > div.cir-text {
+	color: rgba(0,0,0,0.5);
+	transition: all 0.8s;
+}
+.head > span > div.cir-text {
+	color: rgba(0,0,0,0);
+	transition: all 0.3s;
+}
+
+#c3, #c3:hover {
+	background-color: rgba(255,255,255,0.6);
+}
+
+
+#my3_logo_div {
+	padding-top: 50px;
+	clear: both;
+	width: 100%;
+	text-align: center;
+}
+#my3_logo {
+	opacity: 0;
+	width: 30%;
+	max-width: 220px;
+	animation-name: dhdhdh;
+	animation-duration: 0.5s;
+	animation-fill-mode: forwards;
+}
+#my3_ka {
+	cursor: pointer;
+	max-width: 100%;
+}
+@keyframes dhdhdh{
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
+}
+
+#my3_aaa {
+	position: fixed;
+	width: 30%;
+	max-width: 150px;
+	right: 5%;
+	bottom: 10%;
+}
+#my3_mail, #my3_ysq {
+	clear: both;
+	float: right;
+	margin-right: 4%;
+}
+#my3_mail + p, #my3_ysq + p{
+	clear: both;
+	float: right;
+	width: 1px;
+}
+#my3_mail + p {
+	height: 10px;
+}
+#my3_ysq + p {
+	height: 20px;
+}
+a {
+	font-size: 20px;
+	text-decoration: none;
+}
+a:link {
+	color:#222222;
+}
+a:visited {
+	color:#222222;
+}
+a:hover {
+	color:#999999;
+}
+
+#my3_ysq_h1 {
+	margin: auto;
+	clear: both;
+	text-align: center;
+	text-shadow: 1px 1px 38px #FFFFFF;
+}
+#my3_ysq_text {
+	margin: auto;
+	margin-top: 50px;
+	margin-bottom: 30px;
+	padding-left: 30px;
+	padding-right: 30px;
+	max-width: 800px;
+	font-size: 18px;
+	text-shadow: 1px 1px 20px #FFFFFF;
+}

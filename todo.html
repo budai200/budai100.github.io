@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<script src="head/jquery-1.8.0.js"></script>
+		<script>
+			$(function(){
+			$("#includedContent").load("head/all_head.html");
+			$("#the_bottom").load("head/all_bottom.html");
+			});
+		</script>
+		<link rel="stylesheet" type="text/css" href="head/all_head.css"/>
+		<link rel="stylesheet" type="text/css" href="todo.css"/>
+		<style>
+			#the_end {
+				color: #AAAAAA;
+				position: fixed;
+				left: auto;
+				right: 30px;
+				bottom: 20px;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="includedContent"></div>
+		
+		<img id="my2_img_ab" src="img/my2/ab.png" />
+		<img id="my2_hw" src="img/my2/hw.png" onclick="window.open('ht'+
+			'tps://appgallery.cloud.huawei.com/ag/n/app/C102118509'+
+			'?channelId=free&id=3a15e63dca8f45a9afd032830bca982a&s='+
+			'34DC29B69E15843BF072554B910223C5C9491607C267041830BF97'+
+			'84C4365894&detailType=0&v=','_blank')" alt="华为市场"/>
+		<img id="my2_xm" src="img/my2/xm.png" onclick="window.open('https'+
+		'://app.mi.com/details?id=com.budai.dailytodo','_blank')" alt="小米市场"/>
+		<div id="my2_aa">
+			<a id="my2_mail" href="mailto:budai100@126.com">联系我们</a><br /><br />
+			<a id="my2_ysq" href="todo_ysq.html" target="_self">隐私政策</a>	
+		</div>
+		
+		<div id="the_bottom"></div>
+	</body>
+</html>

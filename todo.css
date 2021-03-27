@@ -1,0 +1,138 @@
+
+body {
+	background: url(img/my2/bg.png)
+}
+.head:hover > span > div.cir-text {
+	color: rgba(255,255,255,0.5);
+	transition: all 0.8s;
+}
+.head > span > div.cir-text {
+	color: rgba(255,255,255,0);
+	transition: all 0.3s;
+}
+#c2, #c2:hover {
+	background-color: rgba(255,255,255,0.6);
+}
+
+
+
+#my2_img_ab {
+	float: left;
+	width: 50%;
+	margin-left: 10%;
+	margin-bottom: 20px;
+	animation-name: dhdhdh;
+	animation-duration: 0.5s;
+	animation-fill-mode: forwards;
+}
+@keyframes dhdhdh{
+	from {
+		opacity: 0;
+		transform: rotate(-5deg);
+	}
+	to {
+		opacity: 1;
+		transform: rotate(0deg);
+	}
+}
+@media screen and (min-width: 987px) { 
+	#my2_img_ab {
+		margin-top: 100px;
+	} 
+} 
+@media screen and (max-width: 987px) { 
+	#my2_img_ab {
+		width: 80%;
+	} 
+}
+
+
+#my2_hw, #my2_xm {
+	cursor: pointer;
+	margin-left: 8%;
+	float: left;
+}
+#my2_xm {
+	padding-top: 30px;
+}
+#my2_hw, #my2_xm {
+	opacity: 0;
+	animation-name: dhdhdh2;
+	animation-duration: 0.5s;
+	animation-fill-mode: forwards;
+}
+@keyframes dhdhdh2{
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
+}
+@media screen and (max-width: 987px) { 
+	#my2_hw, #my2_xm {
+		clear: both;
+		margin-top: 30px;
+		max-width: 30%;
+		margin-left: 20%;
+	}
+	#my2_xm {
+		padding-bottom: 80px;
+	}
+} 
+@media screen and (min-width: 987px) { 
+	#my2_hw, #my2_xm {
+		margin-top: 20px;
+		max-width: 15%;
+	}
+} 
+@media screen and (min-width: 2300px) { 
+	#my2_hw, #my2_xm {
+		margin-top: 20px;
+		max-width: 15%;
+	}
+	#my2_hw {
+		margin-top: 200px;
+		max-width: 15%;
+	}
+} 
+
+
+#my2_aa {
+	clear: both;
+	float: right;
+	margin-top: -180px;
+	margin-right: 20%;
+}
+a {
+	font-size: 20px;
+	text-decoration: none;
+}
+a:link {
+	color:#EEEEEE;
+}
+a:visited {
+	color:#EEEEEE;
+}
+a:hover {
+	color:#DDDDDD;
+}
+
+#my2_ysq_h1 {
+	color: #EEEEEE;
+	margin: auto;
+	clear: both;
+	text-align: center;
+	text-shadow: 1px 1px 38px #333333;
+}
+#my2_ysq_text {
+	color: #EEEEEE;
+	margin: auto;
+	margin-top: 50px;
+	margin-bottom: 30px;
+	padding-left: 30px;
+	padding-right: 30px;
+	max-width: 800px;
+	font-size: 18px;
+	text-shadow: 1px 1px 20px #333333;
+}

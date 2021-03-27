@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<script src="head/jquery-1.8.0.js"></script>
+		<script>
+			$(function(){
+			$("#includedContent").load("head/all_head.html");
+			$("#the_bottom").load("head/all_bottom.html");
+			});
+		</script>
+		<link rel="stylesheet" type="text/css" href="head/all_head.css"/>
+		<link rel="stylesheet" type="text/css" href="xiaoqingdan.css"/>
+	</head>
+	<body>
+		<div id="includedContent"></div>
+		<div id="my1_img_div_2">
+			<div>
+				<img id="my1_logo" src="img/my1/logo.png" />
+				<span id="my1_aa">
+					<a id="my1_mail" href="mailto:budai100@126.com">联系我们</a><br />
+					<a id="my1_ysq" href="xiaoqingdan_ysq.html" target="_self">隐私政策</a>	
+				</span>
+			</div>
+			<p></p>
+			<img id="my1_hw" src="img/my1/m1.png" onclick="window.open(
+			'https://appgallery.cloud.huawei.com/ag/n/app/C101724771?'+
+			'channelId=%E8%87%AA%E8%A1%8C%E6%8E%A8%E5%B9%BF&id=05618902'+
+			'f91e4a02853907c4b2c0552a&s=0F85591B426E1202EC008624D9AF576'+
+			'1FA094471AC55D75C66EC010AED0F60B8&detailType=0&v=','_blank')" 
+			alt="华为市场"/>
+			<img id="my1_xm" src="img/my1/m2.png" onclick="window.open(
+			'https://app.mi.com/details?id=com.budai.xiaoqingdan','_blank')" 
+			alt="小米市场"/>
+		</div>
+		
+		<div id="the_bottom"></div>
+	</body>
+</html>

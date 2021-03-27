@@ -1,0 +1,139 @@
+
+body {
+	background: url(img/my4/bg.jpg);
+	background-color: rgb(242,239,234);
+}
+.head:hover > span > div.cir-text {
+	color: rgba(0,0,0,0.5);
+	transition: all 0.8s;
+}
+.head > span > div.cir-text {
+	color: rgba(0,0,0,0);
+	transition: all 0.3s;
+}
+
+#c4, #c4:hover {
+	background-color: rgba(255,255,255,0.6);
+}
+
+
+#my4_img_ab {
+	opacity: 0;
+	float: left;
+	width: 30%;
+	margin-left: 20%;
+	margin-bottom: 20px;
+	animation-name: dhdhdh;
+	animation-duration: 0.5s;
+	animation-fill-mode: forwards;
+}
+@keyframes dhdhdh{
+	from {
+		opacity: 0;
+		transform: rotate(-5deg);
+	}
+	to {
+		opacity: 1;
+		transform: rotate(0deg);
+	}
+}
+@media screen and (min-width: 987px) { 
+	#my4_img_ab {
+		margin-top: 100px;
+	} 
+} 
+@media screen and (max-width: 987px) { 
+	#my4_img_ab {
+		width: 50%;
+	} 
+}
+
+
+
+#my4_logo, #my4_hw {
+	opacity: 0;
+	margin-left: 8%;
+	float: left;
+	animation-name: dhdhdh2;
+	animation-duration: 0.5s;
+	animation-fill-mode: forwards;
+}
+#my4_hw{
+	cursor: pointer;
+	padding-top: 10px;
+}
+@keyframes dhdhdh2{
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
+} 
+@media screen and (max-width: 987px) { 
+	#my4_logo, #my4_hw {
+		clear: both;
+		margin-top: 30px;
+		max-width: 30%;
+		margin-left: 20%;
+	}
+	#my4_hw {
+		padding-bottom: 80px;
+	}
+} 
+@media screen and (min-width: 987px) { 
+	#my4_logo, #my4_hw {
+		margin-top: 20px;
+		max-width: 15%;
+		margin-right: 20%;
+	}
+}
+@media screen and (min-width: 1454px) { 
+	#my4_logo {
+		margin-top: 10px;
+		max-width: 15%;
+	}
+} 
+
+
+#my4_aa {
+	opacity: 0;
+	clear: both;
+	float: right;
+	margin-top: -180px;
+	margin-right: 20%;
+	animation-name: dhdhdh2;
+	animation-duration: 0.5s;
+	animation-fill-mode: forwards;
+}
+a {
+	font-size: 20px;
+	text-decoration: none;
+}
+a:link {
+	color:#222222;
+}
+a:visited {
+	color:#222222;
+}
+a:hover {
+	color:#999999;
+}
+
+
+#my3_ysq_h1 {
+	margin: auto;
+	clear: both;
+	text-align: center;
+	text-shadow: 1px 1px 38px #FFFFFF;
+}
+#my3_ysq_text {
+	margin: auto;
+	margin-top: 50px;
+	margin-bottom: 30px;
+	padding-left: 30px;
+	padding-right: 30px;
+	max-width: 800px;
+	font-size: 18px;
+	text-shadow: 1px 1px 20px #FFFFFF;
+}
