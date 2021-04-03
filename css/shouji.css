@@ -1,0 +1,28 @@
+body {
+	background: url(../img/shouji/bg.png);
+}
+#pan_1 {
+	width: 0px;
+}
+#pan_2 {
+	margin-top: 100px;
+	width: 50%;
+	margin-left: 0px;
+}
+#logo + img {
+	margin-top: 80px;
+	max-width: 150px;
+	float: right;
+}
+a {
+	right: 5px;
+	float: right;
+}
+
+@media screen and (orientation: portrait) { 
+	a {
+		text-align: right;
+		right: 5px;
+		float: right;
+	}
+}

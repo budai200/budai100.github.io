@@ -2,20 +2,17 @@
 <html>
 	<head>
 		<meta charset="utf-8">
-		<title></title>
-		<script src="head/jquery-1.8.0.js"></script>
-		<script>
-			$(function(){
-			$("#includedContent").load("head/all_head.html");
-			$("#the_bottom").load("head/all_bottom.html");
-			});
-		</script>
-		<link rel="stylesheet" type="text/css" href="head/all_head.css"/>
-		<link rel="stylesheet" type="text/css" href="index.css"/>
+		<link rel="stylesheet" type="text/css" href="css/all.css"/>
+		<script src="js/the_show.js"></script>
+		<title>主页</title>
 	</head>
 	<body>
-		<div id="includedContent"></div>
-		
-		<div id="the_bottom"></div>
+		<iframe id="head_frame" src="all_head.html" frameborder="0"></iframe>
+		<img id="img_list" src="img/b/b_list.png" onclick="show()"/>
+		<p id="the_botton">©2019-2021 - Bu Dai</p>
+		<div id="pan">
+			<div id="pan12">
+			</div>
+		</div>
 	</body>
 </html>
