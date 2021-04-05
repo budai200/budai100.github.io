@@ -4,16 +4,37 @@
 		<meta charset="utf-8">
 		<link href="img/title.ico" rel="icon" type="image/x-ico">
 		<link rel="stylesheet" type="text/css" href="css/all.css"/>
+		<link rel="stylesheet" type="text/css" href="css/index.css"/>
 		<script src="js/the_show.js"></script>
 		<title>主页</title>
 	</head>
 	<body>
-		<iframe id="head_frame" src="all_head.html" frameborder="0"></iframe>
-		<img id="img_list" src="img/b/b_list.png" onclick="show()"/>
+		<!-- <iframe id="head_frame" src="all_head.html" frameborder="0"></iframe>
+		<img id="img_list" src="img/b/b_list.png" onclick="show()"/> -->
 		<p id="the_botton">©2019-2021 - Bu Dai</p>
-		<div id="pan">
-			<div id="pan12">
+		<div id="pan_box">
+			<div class="app_pan" onclick="in_to_the('xiaoqingdan.html')">
+				<img src="img/logoR/xqd.png" />
+				<b>小清单</b>
 			</div>
+			<div class="app_pan" onclick="in_to_the('dailytodo.html')">
+				<img src="img/logoR/todo.png" />
+				<b>日常ToDo</b>
+			</div>
+			<div class="app_pan" onclick="in_to_the('shouji.html')">
+				<img src="img/logoR/sj.png" />
+				<b>手记</b>
+			</div>
+			<div class="app_pan" onclick="in_to_the('poem.html')">
+				<img src="img/logoR/poem.png" />
+				<b>古诗词库</b>
+			</div>
+			<p id="box_hr"></p>
+			<hr />
+			<div class="web_pan" onclick="in_to_the('base64.html')">
+				<p><b>Base64在线解码</b></p>
+			</div>
+			<p id="box_bottom"></p>
 		</div>
 	</body>
 </html>

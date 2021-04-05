@@ -1,0 +1,84 @@
+* {
+	transition: all 0.3s;
+	user-select: none;
+}
+body {
+	margin: 0;
+	opacity: 0;
+	animation-name: dhdhdh;
+	animation-duration: 0.5s;
+	animation-fill-mode: forwards;
+}
+@keyframes dhdhdh{
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
+} 
+
+#pan_box {
+	width: 70%;
+	margin: auto;
+	margin-top: 100px;
+}
+hr {
+	clear: both;
+}
+#box_hr {
+	height: 10px;
+	clear: both;
+}
+#box_bottom {
+	height: 120px;
+	clear: both;
+}
+
+.app_pan, .web_pan {
+	cursor: pointer;
+	float: left;
+	position: relative;
+	margin: 5px;
+	border-radius: 20px;
+	padding: 15px;
+	animation-name: dhdhdh2;
+	animation-duration: 0.5s;
+	animation-fill-mode: forwards;
+}
+@keyframes dhdhdh2{
+	from {
+		padding: 15px;
+	}
+	to {
+		padding: 20px;
+	}
+} 
+.app_pan {
+	height: 80px;
+	width: 250px;
+}
+.web_pan {
+	height: 40px;
+	width: 180px;
+}
+.app_pan:hover, .web_pan:hover {
+	background: #DDDDDD;
+}
+
+.app_pan > img {
+	height: 100%;
+}
+
+.app_pan > b {
+	vertical-align: top;
+	position: relative;
+	top: 40px;
+	left: 10px;
+	font-size: 18px;
+}
+.web_pan > p {
+	margin: 0px;
+	margin-top: 10px;
+	font-size: 16px;
+}

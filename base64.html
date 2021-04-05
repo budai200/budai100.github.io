@@ -37,21 +37,7 @@
 					<p id="my5_b_text">(等待输入)</p>
 				</div>
 				<script>
-					$('#my5_in').keyup(function() {
-						document.getElementById("my5_yes_a").style.width = "0px";
-						document.getElementById("my5_yes_b").style.width = "0px";
-						var a = ''
-						var b = ''
-						try {
-							a = Base64.decode($('#my5_in').val());
-						} catch(err) { }
-						try {
-							b = Base64.encode($('#my5_in').val());
-						} catch(err) { }
-						document.getElementById('my5_a_text').innerHTML = a;
-						document.getElementById('my5_b_text').innerHTML = b;
-					});
-					function change() {
+					function changee() {
 						document.getElementById("my5_yes_a").style.width = "0px";
 						document.getElementById("my5_yes_b").style.width = "0px";
 						var a = ''
@@ -65,6 +51,20 @@
 						document.getElementById('my5_a_text').innerHTML = a;
 						document.getElementById('my5_b_text').innerHTML = b;
 					}
+					$('#my5_in').bind('input propertychange','textarea',function() {
+						document.getElementById("my5_yes_a").style.width = "0px";
+						document.getElementById("my5_yes_b").style.width = "0px";
+						var a = ''
+						var b = ''
+						try {
+							a = Base64.decode($('#my5_in').val());
+						} catch(err) { }
+						try {
+							b = Base64.encode($('#my5_in').val());
+						} catch(err) { }
+						document.getElementById('my5_a_text').innerHTML = a;
+						document.getElementById('my5_b_text').innerHTML = b;
+					});
 					function clickInput() {
 						document.getElementById("my5_yes_a").style.width = "0px";
 						document.getElementById("my5_yes_b").style.width = "0px";
@@ -91,21 +91,21 @@
 						var text = document.getElementById("my5_a_text").innerText;
 						var input = document.getElementById("my5_in");
 						input.value = text;
-						change()
+						changee()
 						input.focus()
 					}
 					function upB() {
 						var text = document.getElementById("my5_b_text").innerText;
 						var input = document.getElementById("my5_in");
 						input.value = text;
-						change()
+						changee()
 						input.focus()
 					}
 					function xxx() {
 						var input = document.getElementById("my5_in");
 						input.value = '';
 						input.rows = 1;
-						change()
+						changee()
 						input.focus()
 						document.getElementById('my5_a_text').innerHTML = '(等待输入)';
 						document.getElementById('my5_b_text').innerHTML = '(等待输入)';
